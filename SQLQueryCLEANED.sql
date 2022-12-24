@@ -69,10 +69,10 @@ SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) -1) as Address
 FROM PortfolioProject.dbo.NashvilleHousing
 
 ALTER TABLE NashvilleHousing
-ADD PropertSplitAddress NVARCHAR(255);
+ADD PropertySplitAddress NVARCHAR(255);
 
 UPDATE NashvilleHousing
-SET PropertSplitAddress = SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) -1)
+SET PropertyplitAddress = SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) -1)
 
 
 ALTER TABLE NashvilleHousing
